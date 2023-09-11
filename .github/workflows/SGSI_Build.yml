@@ -48,7 +48,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
        - name: Checkout
@@ -61,7 +61,7 @@ jobs:
        - name: Cloning...
          run: |
              if [ "$VERSION" == "12" ]; then
-             git clone --recurse-submodules https://github.com/TheMiniOnii221/SGSIs -b main SGSIs
+             git clone --recurse-submodules https://github.com/TheMiniOnii221/SGSIs -b main11 SGSIs
              elif [ "$VERSION" == "11" ]; then
              git clone --recurse-submodules https://github.com/TheMiniOnii221/SGSIs -b main11 SGSIs
              elif [ "$VERSION" == "13" ]; then
